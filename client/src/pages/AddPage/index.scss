@@ -1,0 +1,32 @@
+#formik{
+    color: #fff;
+    background-color: #2991e6;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    form{
+        .error{
+            color: rgb(255, 0, 0);
+        }
+        div{
+            width: 600px;
+            input{
+                width: 100%;
+            }
+        }
+    }
+    input{
+        max-width: 500px;
+    }
+}
+
+#table{
+    padding: 100px 0;
+    table{
+        img{
+            max-width: 100px;
+        }
+    }
+}

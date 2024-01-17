@@ -1,0 +1,19 @@
+#OurProducts{
+    padding: 100px 0;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .header{
+            max-width: 500px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .products{
+            .row{
+                justify-content: center;
+            }
+        }
+    }
+}

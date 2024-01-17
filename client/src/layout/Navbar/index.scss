@@ -1,0 +1,109 @@
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    #desktop-nav{
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo{
+                font-size: 42px;
+                font-weight: 700;
+                .logo-text{
+                    text-decoration: none;
+                    color: #000;
+                    .dot{
+                        color: rgb(255, 166, 0);
+                    }
+                }
+            }
+            .pages{
+                
+                ul{
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        
+                        .navlink{
+                            padding: 20px 10px;
+                            text-decoration: none;
+                            color: #000;
+                            font-weight: 400
+                        }
+                        .navlink.active{
+                            color: rgb(255, 115, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #mobile-nav{
+        display: none;
+        .container{
+            .top-nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo{
+                font-size: 42px;
+                font-weight: 700;
+                .logo-text{
+                    text-decoration: none;
+                    color: #000;
+                    .dot{
+                        color: rgb(255, 166, 0);
+                    }
+                }
+            }
+            .nav-icon{
+                button{
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+            .pages{
+                height: 0;
+                transition: 300ms ease;
+                overflow: hidden;
+                &.active{
+                    height: 300px;
+                }
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        padding: 20px 10px;
+                        
+                        .navlink{
+                            text-decoration: none;
+                            color: #000;
+                            font-weight: 400
+                        }
+                        .navlink.active{
+                            color: rgb(255, 115, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    nav{
+        #desktop-nav{
+            display: none;
+        }
+        #mobile-nav{
+            display: block;
+        }
+    }
+}

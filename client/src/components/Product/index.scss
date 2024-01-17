@@ -1,0 +1,37 @@
+.product{
+    max-width: 350px !important;
+    min-width: 250px !important;
+    padding: 0;
+    border: none !important;
+    text-align: center;
+    margin-bottom: 20px;
+    .image{
+        img{
+            max-width: 100%;
+        }
+    }
+    .stars{
+        button{
+            background-color: transparent;
+            border: none;
+        }
+        .star-icon{
+            fill: orange;
+        }
+        .heart{
+            margin-left: 20px;
+            fill: #cfcfcf;
+            &.active{
+                fill: red;
+            }
+        }
+    }
+    p{
+        color: #777;
+    }
+    .buttons{
+        #dark-button{
+            margin-right: 20px;
+        }
+    }
+}

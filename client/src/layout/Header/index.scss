@@ -1,0 +1,27 @@
+header{
+    background:linear-gradient(#00000060, #00000060), url("https://preview.colorlib.com/theme/selling/images/hero_2.jpg"), ;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    .container{
+        color: #fff;
+        .content{
+            max-width: 600px;
+            h1{
+                font-size: clamp(1.875rem, 1rem + 4.6667vw, 4.5rem);
+                font-weight: 800;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 300;
+            }
+            #dark-button{
+                margin-right: 20px;
+            }
+        }
+    }
+}
